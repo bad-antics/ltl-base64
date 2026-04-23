@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_base64
+
+import std::io
+use ltl_base64 as lib
+
+fn main() {
+    io::println("ltl_base64 demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
